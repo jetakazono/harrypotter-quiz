@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="imagex/png" href="  https://icons-for-free.com/iconfiles/png/512/hallows+harry+outline+potter+icon-1320183608275058865.png
+  ">
+  <link rel="stylesheet" href="index.css" />
+  <title>Happy Potter Quiz</title>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Happy Potter Quiz</h1>
+    <span class="divider">|</span>
+    <div>
+      Score: <span id="score"></span>
+    </div>
+  </header>
+  <section>
+    <ul class="container">
+      <li id="question1">
+        <h2>1.When is Harry Potter's birthday?</h2>
+        <button onclick="checkAnswer(event, 0, 'July 31')">July 31</button>
+        <button onclick="checkAnswer(event, 0, 'September 8')">September 8</button>
+        <button onclick="checkAnswer(event, 0, 'December 1')">December 1</button>
+      </li>
+      <li id="question2" class="disabled">
+        <h2>2. Who are Harry's two best friends in the world?</h2>
+        <button onclick="checkAnswer(event, 1, 'Luna and Jake<')">Luna and Jake</button>
+        <button onclick="checkAnswer(event, 1, 'Ron Weasley and Hermione Granger')">
+          Ron Weasley and Hermione Granger</button>
+        <button onclick="checkAnswer(event, 1, 'Michael Jackson and Katy Perry')">
+          Michael Jackson and Katy Perry</button>
+      </li>
+      <li id="question3" class="disabled">
+        <h2>3. What house is Harry Potter sorted into?</h2>
+        <button onclick="checkAnswer(event, 2, 'Slytherin')">Slytherin</button>
+        <button onclick="checkAnswer(event, 2, 'Gryffindor')">Gryffindor</button>
+        <button onclick="checkAnswer(event, 2, 'Hufflepuff')">Hufflepuff</button>
+      </li>
+      <li id="question4" class="disabled">
+        <h2>4. What are the names of Harry’s parents?</h2>
+        <button onclick="checkAnswer(event, 3,'James and Lily Potter')">
+          James and Lily Potter</button>
+        <button onclick="checkAnswer(event, 3, 'Lord Voldemort and Hermione Granger')">
+          Lord Voldemort and Hermione Granger</button>
+        <button onclick="checkAnswer(event, 3, 'Dolores Umbridge and Alastor Moody')">
+          Dolores Umbridge and Alastor Moody</button>
+      </li>
+      <li id="question5" class="disabled">
+        <h2>5. What animal can Harry speak to?</h2>
+        <button onclick="checkAnswer(event, 4, 'dog')">dog</button>
+        <button onclick="checkAnswer(event, 4, 'fish')">fish</button>
+        <button onclick="checkAnswer(event, 4, 'snake')">snake</button>
+      </li>
+    </ul>
+    <a href="" id="end">🦉 Try it again</a>
+  </section>
+</body>
+
+</html>
